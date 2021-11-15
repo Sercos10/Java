@@ -3,24 +3,24 @@ import java.util.Scanner;
 public class Ejecutable {
 	
 	public static void main(String[] args) {
-		int n=7;
-		String frase="Hola";
-		String frase2=new String("Adios");
-		Scanner teclado=new Scanner(System.in);
 		
-		Coche micoche=new Coche();
-		Coche tucoche=new Coche("5748-BMD","Fiat",9000);
+		Coche c1 = null;
+		Coche c2 = null;
+		Garaje g= new Garaje("Colón",
+				new Coche("4545BBN","Ford",456),
+				new Coche("6969RNG","Renault",524));
 		
-		micoche.setModelo("Renault");
-		micoche.setMatricula("6541-ABS");
-		micoche.setKms(5000);
+		System.out.println(g);
+		System.out.println();
 		
-		tucoche.setModelo("BMW");
-		tucoche.setMatricula("4875-MSN");
-		tucoche.setKms(100);
+		System.out.println(g.cuentaCoches());
 		
-		System.out.println(micoche.toString());
-		System.out.println(tucoche);
+		Coche aux=g.sacaCoche("4545BBN");
+		
+		System.out.println(aux);
+		
+		System.out.println(g.cuentaCoches());
+		
 	}
 	
 }
