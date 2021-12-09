@@ -6,7 +6,7 @@ public class Ejecutable {
 		
 		Coche c1 = null;
 		Coche c2 = null;
-		Garaje g= new Garaje("Colón",
+		Garaje g= new Garaje("Colon",
 				new Coche("4545BBN","Ford",456),
 				new Coche("6969RNG","Renault",524));
 		
